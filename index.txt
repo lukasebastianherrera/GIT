@@ -1,0 +1,16 @@
+---------- GIT ----------
+
+Area de trabajo -> Staging Area -> Commited -> Repository 
+
+Comandos basicos:
+git init -> crea un repositorio nuevo
+git clone <url> -> clona un repositorio remoto
+git status -> muestra el estado del area de trabajo y staging area
+git add <archivo> -> agrega un archivo al area de staging
+git rm --cached <archivo> -> elimina un archivo del area de staging
+git commit -m "mensaje" -> commitea los archivos en staging area al repositorio local
+git push -> sube los cambios al repositorio remoto
+git pull -> trae los cambios del repositorio remoto al local
+git log -> muestra el historial de commits
+
+
