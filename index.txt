@@ -18,3 +18,4 @@ git log -> muestra el historial de commits
 
 git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
 git log -> muestra el historial de commits
+* --oneline (Version corta del log)
