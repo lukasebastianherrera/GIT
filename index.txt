@@ -8,16 +8,25 @@ git clone <url> -> clona un repositorio remoto
 git status -> muestra el estado del area de trabajo y staging area
 * -s (Version corta del status) 
 git add <archivo> -> agrega un archivo al area de staging
-git restore --staged index.txt -> elimina un archivo del area de staging  
+git restore --staged <archivo> -> elimina un archivo del area de staging  
 git commit -m "mensaje" -> commitea los archivos en staging area al repositorio local
 * -a -> agrega todos los archivos modificados al area de staging y los commitea
 * --amend -> modifica el ultimo commit
 git push -> sube los cambios al repositorio remoto
 git pull -> trae los cambios del repositorio remoto al local
-git log -> muestra el historial de commits
-git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo al ultimo  commit
 
+git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo al ultimo commit || cambiar entre ramas (no recomendado)
 git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
 git log -> muestra el historial de commits
 * --oneline (Version corta del log)
+
+Branches: 
 git branch -> muestra las ramas existentes
+* -d <nombre_rama> -> elimina la rama especificada
+* -m <nombre_rama> <nuevo_nombre> -> renombra la rama especificada || desde otra rama.
+* -m <nuevo_nombre> -> renombra la rama actual.
+git switch <nombre_rama> -> cambia a la rama especificada
+* -c <nombre_rama> -> crea y cambia a la nueva rama especificada
+- Tener en cuenta que la rama se crea en base a la rama en la que se esta parado actualmente. Se pueden hacer ramas de otras ramas.
+git merge <nombre_rama> -> fusiona la rama especificada en la rama actual
+git reset --hard <commit_id> -> vuelve al commit especificado, descartando todos los cambios posteriores en el area de trabajo y staging area
