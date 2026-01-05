@@ -20,5 +20,4 @@ git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo 
 git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
 git log -> muestra el historial de commits
 * --oneline (Version corta del log)
-
-probando 
+git branch -> muestra las ramas existentes
