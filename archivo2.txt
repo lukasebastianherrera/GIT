@@ -1,3 +1,3 @@
 Esto es una prueba de branchs, modificado en la rama-prueba.
 Esta es la version final ya integrada.
-esta no es la version final
+esta es la version final del archivo2.txt
