@@ -37,3 +37,6 @@ git ignore:
 - ! -> no ignora el archivo especificado
 - / -> ignora carpetas
 - # -> comentario
+
+alias: 
+- git config --global alias.<alias_name> '<git_command>'
