@@ -19,6 +19,7 @@ git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo 
 git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
 git log -> muestra el historial de commits
 * --oneline (Version corta del log)
+* --graph (Muestra un grafico de las ramas y merges)
 
 Branches: 
 git branch -> muestra las ramas existentes
@@ -30,3 +31,9 @@ git switch <nombre_rama> -> cambia a la rama especificada
 - Tener en cuenta que la rama se crea en base a la rama en la que se esta parado actualmente. Se pueden hacer ramas de otras ramas.
 git merge <nombre_rama> -> fusiona la rama especificada en la rama actual
 git reset --hard <commit_id> -> vuelve al commit especificado, descartando todos los cambios posteriores en el area de trabajo y staging area
+
+git ignore:
+- * -> ignora todos los archivos con ese tipo de extension
+- ! -> no ignora el archivo especificado
+- / -> ignora carpetas
+- # -> comentario
