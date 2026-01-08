@@ -18,8 +18,8 @@ git pull -> trae los cambios del repositorio remoto al local
 git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo al ultimo commit || cambiar entre ramas (no recomendado)
 git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
 git log -> muestra el historial de commits
-* --oneline (Version corta del log)
-* --graph (Muestra un grafico de las ramas y merges)
+* --oneline -> (Version corta del log)
+* --graph -> (Muestra un grafico de las ramas y merges)
 
 Branches: 
 git branch -> muestra las ramas existentes
@@ -39,4 +39,22 @@ git ignore:
 - # -> comentario
 
 alias: 
-- git config --global alias.<alias_name> '<git_command>'
+- git config --global alias.<alias_name> '<git_command>' -> crea un alias para un comando git
+
+clone:
+- git clone <repository_url> -> clona un repositorio remoto
+- git clone <repository_url> <local_directory_name>
+- git clone --depth 1 <repository_url> -> (clona solo el ultimo commit)
+- git clone --branch <branch_name> <repository_url> -> (clona una rama especifica)
+
+push:
+- git push origin <branch_name> -> (empuja una rama especifica)
+- git push --set-upstream origin <branch_name> -> (empuja una rama nueva y la establece como upstream)
+* -u -> establece la rama remota por defecto para futuros pushes
+
+pull:
+- git pull -> trae los cambios del repositorio remoto y los fusiona con la rama actual
+
+fetch: 
+- git fetch -> trae los cambios del repositorio remoto sin fusionarlos
+
