@@ -58,3 +58,11 @@ pull:
 fetch: 
 - git fetch -> trae los cambios del repositorio remoto sin fusionarlos
 
+fork: 
+- Crear una copia de un repositorio remoto en tu propia cuenta
+
+pull request:
+- Solicitar que los cambios realizados en tu fork sean revisados e integrados en el repositorio original
+
+issues: 
+- Herramienta para rastrear errores, mejoras y tareas en un proyecto
