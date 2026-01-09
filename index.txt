@@ -3,66 +3,67 @@
 Area de trabajo -> Staging Area -> Commited -> Repository 
 
 Comandos basicos:
-git init -> crea un repositorio nuevo
-git clone <url> -> clona un repositorio remoto
-git status -> muestra el estado del area de trabajo y staging area
+Git init -> crea un repositorio nuevo
+Git clone <url> -> clona un repositorio remoto
+Git status -> muestra el estado del area de trabajo y staging area
 * -s (Version corta del status) 
-git add <archivo> -> agrega un archivo al area de staging
-git restore --staged <archivo> -> elimina un archivo del area de staging  
-git commit -m "mensaje" -> commitea los archivos en staging area al repositorio local
+Git add <archivo> -> agrega un archivo al area de staging
+Git restore --staged <archivo> -> elimina un archivo del area de staging  
+Git commit -m "mensaje" -> commitea los archivos en staging area al repositorio local
 * -a -> agrega todos los archivos modificados al area de staging y los commitea
 * --amend -> modifica el ultimo commit
-git push -> sube los cambios al repositorio remoto
-git pull -> trae los cambios del repositorio remoto al local
+Git push -> sube los cambios al repositorio remoto
+Git pull -> trae los cambios del repositorio remoto al local
 
-git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo al ultimo commit || cambiar entre ramas (no recomendado)
-git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
-git log -> muestra el historial de commits
+Git checkout <archivo> -> descarta los cambios en el area de trabajo, volviendo al ultimo commit || cambiar entre ramas (no recomendado)
+Git diff -> muestra las diferencias entre el area de trabajo y el area de staging 
+Git log -> muestra el historial de commits
 * --oneline -> (Version corta del log)
 * --graph -> (Muestra un grafico de las ramas y merges)
 
 Branches: 
-git branch -> muestra las ramas existentes
+Git branch -> muestra las ramas existentes
 * -d <nombre_rama> -> elimina la rama especificada
 * -m <nombre_rama> <nuevo_nombre> -> renombra la rama especificada || desde otra rama.
 * -m <nuevo_nombre> -> renombra la rama actual.
-git switch <nombre_rama> -> cambia a la rama especificada
+Git switch <nombre_rama> -> cambia a la rama especificada
 * -c <nombre_rama> -> crea y cambia a la nueva rama especificada
 - Tener en cuenta que la rama se crea en base a la rama en la que se esta parado actualmente. Se pueden hacer ramas de otras ramas.
-git merge <nombre_rama> -> fusiona la rama especificada en la rama actual
-git reset --hard <commit_id> -> vuelve al commit especificado, descartando todos los cambios posteriores en el area de trabajo y staging area
+Git merge <nombre_rama> -> fusiona la rama especificada en la rama actual
+Git reset --hard <commit_id> -> vuelve al commit especificado, descartando todos los cambios posteriores en el area de trabajo y staging area
 
-git ignore:
+Git ignore:
 - * -> ignora todos los archivos con ese tipo de extension
 - ! -> no ignora el archivo especificado
 - / -> ignora carpetas
 - # -> comentario
 
-alias: 
-- git config --global alias.<alias_name> '<git_command>' -> crea un alias para un comando git
+Alias: 
+- Git config --global alias.<alias_name> '<git_command>' -> crea un alias para un comando Git
 
-clone:
-- git clone <repository_url> -> clona un repositorio remoto
-- git clone <repository_url> <local_directory_name>
-- git clone --depth 1 <repository_url> -> (clona solo el ultimo commit)
-- git clone --branch <branch_name> <repository_url> -> (clona una rama especifica)
+Clone:
+- Git clone <repository_url> -> clona un repositorio remoto
+- Git clone <repository_url> <local_directory_name>
+- Git clone --depth 1 <repository_url> -> (clona solo el ultimo commit)
+- Git clone --branch <branch_name> <repository_url> -> (clona una rama especifica)
 
-push:
-- git push origin <branch_name> -> (empuja una rama especifica)
-- git push --set-upstream origin <branch_name> -> (empuja una rama nueva y la establece como upstream)
+Push:
+- Git push origin <branch_name> -> (empuja una rama especifica)
+- Git push --set-upstream origin <branch_name> -> (empuja una rama nueva y la establece como upstream)
 * -u -> establece la rama remota por defecto para futuros pushes
 
-pull:
-- git pull -> trae los cambios del repositorio remoto y los fusiona con la rama actual
+Pull:
+- Git pull -> trae los cambios del repositorio remoto y los fusiona con la rama actual
 
-fetch: 
-- git fetch -> trae los cambios del repositorio remoto sin fusionarlos
+Fetch: 
+- Git fetch -> trae los cambios del repositorio remoto sin fusionarlos
 
-fork: 
+Fork: 
 - Crear una copia de un repositorio remoto en tu propia cuenta
 
-pull request:
+Pull request:
 - Solicitar que los cambios realizados en tu fork sean revisados e integrados en el repositorio original
 
-issues: 
+Issues: 
 - Herramienta para rastrear errores, mejoras y tareas en un proyecto
+- Se pueden asignar, etiquetar y comentar
